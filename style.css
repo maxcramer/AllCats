@@ -7,7 +7,7 @@ nav {
     flex-direction: row;
 }
 
-#cat__list {
+#app {
     background-color: #E7E7E7;
     height: 200px;
     width: 100%;
