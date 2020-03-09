@@ -19,7 +19,7 @@ function fetchData() {
                         <p class="description">${cat.description}</p>
                     </div>
                     <div class="button__parent">
-                        <button class="take__button">TAKE HOME</button>
+                        <button onClick="adopt()" class="take__button">TAKE HOME</button>
                     </div>
                 </div>
                 `
@@ -34,3 +34,18 @@ function fetchData() {
 
 
 fetchData();
+
+function adopt() {
+        var div = document.createElement('div');
+        div.style.backgroundColor = "red";
+        // div.style.position = "absolute";
+        // div.style.left = "50px";
+        // div.style.top = "50px";
+        // div.style.height = "10px";
+        div.style.width = "300px";
+        div.style.zIndex = 3;
+        div.style.height = "300px";
+        div.style.position = "fixed";
+
+        document.getElementsByTagName('body')[0].appendChild(div);
+}           

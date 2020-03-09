@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    z-index: 1;
 }
 
 nav {
@@ -16,6 +17,8 @@ nav {
     flex-wrap: wrap;
     padding: 0 10% 0 10%;
     justify-content: center;
+    z-index: 1;
+    position: absolute;
 }
 
 .cat {
@@ -27,6 +30,7 @@ nav {
     flex-direction: column;
     flex-grow: 1;
     position: relative;
+    /* z-index: 1; */
 }
 
 .cat__img {
@@ -59,4 +63,37 @@ nav {
     height: 58px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 600px) {
+  .cat {
+    background-color: white;
+    width: 48%;
+    margin: 1%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    margin-top: 6.5%;
+}
+
+
+#app {
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2% 0 2%;
+}
+
+.cat__info {
+    padding-left: 5px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
 }
