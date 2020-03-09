@@ -81,7 +81,7 @@ nav {
     border: 1px solid grey;
     z-index: 3;
     width: 30%;
-    height: 74%;
+    height: 64%;
     position: fixed;
     margin: 5% 35%;
     text-align: center;
@@ -95,11 +95,33 @@ nav {
     width: 30rem;
 }
 
+#menu__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30rem;
+    margin-right: 2rem;
+}
+
+#choose {
+    background-color: #E7E7E7;
+    margin: 0;
+}
+
+#choose__text {
+    margin: 0;
+    padding: 3rem 8rem;
+}
+
 input {
     width: 60%;
     height: 30px;
     font-size: 20px;
     border-radius: 3px;
+}
+
+#logo {
+    padding-left: 1%;
 }
 
 
@@ -136,6 +158,27 @@ input {
 
 h2 {
     font-size: 20px;
+}
+
+#menu__text {
+    display: none;
+}
+
+#choose__text {
+    margin: 0;
+    padding: 1rem 1rem 0;
+}
+
+#menu__items {
+    justify-content: flex-end;
+}
+
+#logo {
+    padding-left: 33%; 
+}
+
+nav {
+    padding: 1rem 2rem;
 }
 
 }
