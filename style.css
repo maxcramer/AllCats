@@ -7,6 +7,8 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 #app {
@@ -83,6 +85,14 @@ nav {
     position: fixed;
     margin: 5% 35%;
     text-align: center;
+}
+
+#menu__items {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: space-between;
+    width: 30rem;
 }
 
 input {
