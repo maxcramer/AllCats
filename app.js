@@ -8,6 +8,10 @@ function fetchData() {
         })
         .then(data => {
             console.log(data);
+            const html = data.map(cat => {
+                return `<h3>${cat.name}</h3>`
+            });
+            console.log(html);
             document.querySelector('#app').innerHTML = '<h1>TESTING</h1>'
         })
         .catch(error => {
