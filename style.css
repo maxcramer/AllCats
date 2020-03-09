@@ -22,7 +22,11 @@ nav {
     background-color: white;
     width: 19%;
     margin: 1%;
-    height: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
 }
 
 .cat__img {
@@ -42,12 +46,17 @@ nav {
     margin: 4%;
     height: 45px;
     font-size: 15px;
+    position: absolute;
+    bottom: 0.5rem;
 }
 
 .cat__info {
     padding-left: 15px;
+    margin-bottom: 1rem;
 }
 
-.button__parent {
-    /* position: absolute; */
+.description {
+    height: 58px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

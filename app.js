@@ -16,7 +16,7 @@ function fetchData() {
                     </div>  
                     <div class="cat__info">  
                         <h2>${cat.name}</h2>
-                        <p>${cat.description}</p>
+                        <p class="description">${cat.description}</p>
                     </div>
                     <div class="button__parent">
                         <button class="take__button">TAKE HOME</button>
