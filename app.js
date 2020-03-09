@@ -37,15 +37,19 @@ fetchData();
 
 function adopt() {
         var div = document.createElement('div');
-        div.style.backgroundColor = "red";
-        // div.style.position = "absolute";
-        // div.style.left = "50px";
-        // div.style.top = "50px";
-        // div.style.height = "10px";
-        div.style.width = "300px";
-        div.style.zIndex = 3;
-        div.style.height = "300px";
-        div.style.position = "fixed";
+        div.id = 'adopt__details';
 
         document.getElementsByTagName('body')[0].appendChild(div);
-}           
+        div.innerHTML += "<h2>Please enter your details</h2>";
+        div.innerHTML += "<div><h4>Name:<h4><input/></div>";
+        div.innerHTML += "<div><h4>Email<h4><input/></div>";
+        div.innerHTML += "<div><h4>Phone Number<h4><input/></div>";
+        div.innerHTML += "<div><h4>Address<h4><input/></div>";
+        div.innerHTML += "<div><button onClick='hide()' class='submit__button'>Submit Details</button></div>";
+
+}
+
+function hide() {
+    var elm = document.getElementById('adopt__details');
+    elm.parentNode.removeChild(elm);
+}

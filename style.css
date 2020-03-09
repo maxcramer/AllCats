@@ -54,6 +54,15 @@ nav {
     bottom: 0.5rem;
 }
 
+.submit__button {
+    background-color: #2DA371;
+    color: white;
+    width: 50%;
+    height: 45px;
+    font-size: 15px;
+    bottom: 0.5rem;
+}
+
 .cat__info {
     padding-left: 15px;
     margin-bottom: 1rem;
@@ -64,6 +73,25 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+#adopt__details {
+    background-color: white;
+    border: 1px solid grey;
+    z-index: 3;
+    width: 30%;
+    height: 74%;
+    position: fixed;
+    margin: 5% 35%;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .cat {
@@ -77,6 +105,10 @@ nav {
     position: relative;
     margin-top: 6.5%;
 }
+
+/* .hide {
+    visibility: hidden ;
+} */
 
 
 #app {
