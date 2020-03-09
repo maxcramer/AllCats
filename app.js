@@ -11,9 +11,12 @@ function fetchData() {
             const html = data.map(cat => {
                 return `
                 <div class="cat">
-                    <img src="${cat.image}" alt="${cat.name}" />
+                    <div class="img__parent">
+                        <img class="cat__img" src="${cat.image}" alt="${cat.name}" />
+                    </div>    
                     <h3>${cat.name}</h3>
                     <p>${cat.description}</p>
+                    <button class="take__button">TAKE HOME</button>
                 </div>
                 `
             }).join('');
