@@ -9,9 +9,15 @@ function fetchData() {
         .then(data => {
             console.log(data);
             const html = data.map(cat => {
-                return `<h3>${cat.name}</h3>`
+                return `
+                <div class="cat">
+                    <img src="${cat.image}" alt="${cat.name}" />
+                    <h3>${cat.name}</h3>
+                    <p>${cat.description}</p>
+                </div>
+                `
             }).join('');
-            console.log(html);
+            // console.log(html);
             document.querySelector('#app').innerHTML = html;
         })
         .catch(error => {
