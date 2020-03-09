@@ -10,9 +10,9 @@ function fetchData() {
             console.log(data);
             const html = data.map(cat => {
                 return `<h3>${cat.name}</h3>`
-            });
+            }).join('');
             console.log(html);
-            document.querySelector('#app').innerHTML = '<h1>TESTING</h1>'
+            document.querySelector('#app').innerHTML = html;
         })
         .catch(error => {
             console.log(error);
