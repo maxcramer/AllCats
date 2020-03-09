@@ -32,7 +32,6 @@ nav {
     flex-direction: column;
     flex-grow: 1;
     position: relative;
-    /* z-index: 1; */
 }
 
 .cat__img {
@@ -83,7 +82,7 @@ nav {
     width: 30%;
     height: 64%;
     position: fixed;
-    margin: 5% 35%;
+    margin: -6% 35%;
     text-align: center;
 }
 
@@ -126,34 +125,19 @@ input {
 
 
 @media only screen and (max-width: 600px) {
-  .cat {
-    background-color: white;
+.cat {
     width: 48%;
-    margin: 1%;
     height: 320px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
     position: relative;
     margin-top: 6.5%;
 }
 
-/* .hide {
-    visibility: hidden ;
-} */
-
-
 #app {
-    background-color: #E7E7E7;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 0 2% 0 2%;
 }
 
 .cat__info {
     padding-left: 5px;
-    margin-bottom: 1rem;
 }
 
 h2 {
@@ -165,7 +149,6 @@ h2 {
 }
 
 #choose__text {
-    margin: 0;
     padding: 1rem 1rem 0;
 }
 
@@ -183,7 +166,7 @@ nav {
 
 #adopt__details {
     width: 80%;
-    margin: 5% 11%;
+    margin: 10% 11%;
 }
 
 }
