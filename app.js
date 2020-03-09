@@ -13,10 +13,14 @@ function fetchData() {
                 <div class="cat">
                     <div class="img__parent">
                         <img class="cat__img" src="${cat.image}" alt="${cat.name}" />
-                    </div>    
-                    <h3>${cat.name}</h3>
-                    <p>${cat.description}</p>
-                    <button class="take__button">TAKE HOME</button>
+                    </div>  
+                    <div class="cat__info">  
+                        <h2>${cat.name}</h2>
+                        <p>${cat.description}</p>
+                    </div>
+                    <div class="button__parent">
+                        <button class="take__button">TAKE HOME</button>
+                    </div>
                 </div>
                 `
             }).join('');
@@ -27,5 +31,6 @@ function fetchData() {
             console.log(error);
         });
 }
+
 
 fetchData();
