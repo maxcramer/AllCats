@@ -114,6 +114,11 @@ nav {
     margin-right: 2rem;
 }
 
+.details__title {
+    text-align: left;
+    padding-left: 5.5rem;
+}
+
 .menu__item:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -184,6 +189,14 @@ nav {
 #adopt__details {
     width: 80%;
     margin: 10% 11%;
+}
+
+.details__title {
+    padding-left: 4rem;
+}
+
+.take__button {
+    height: 61px;
 }
 
 }

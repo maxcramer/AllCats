@@ -18,7 +18,7 @@ function fetchData() {
                             <p class="description">${cat.description}</p>
                         </div>
                         <div class="button__parent">
-                            <button onClick="adopt()" class="take__button">TAKE HOME</button>
+                            <button onClick="adopt()" class="take__button">TAKE ${cat.name.toUpperCase()} HOME</button>
                         </div>
                     </div>
                 `
@@ -39,10 +39,10 @@ function adopt() {
 
         document.getElementsByTagName('body')[0].appendChild(div);
         div.innerHTML += "<h2>Please enter your details</h2>";
-        div.innerHTML += "<div><h4>Name:<h4><input/></div>";
-        div.innerHTML += "<div><h4>Email<h4><input/></div>";
-        div.innerHTML += "<div><h4>Phone Number<h4><input/></div>";
-        div.innerHTML += "<div><h4>Address<h4><input/></div>";
+        div.innerHTML += "<div><h4 class='details__title'>Name:<h4><input/></div>";
+        div.innerHTML += "<div><h4 class='details__title'>Email<h4><input/></div>";
+        div.innerHTML += "<div><h4 class='details__title'>Phone Number<h4><input/></div>";
+        div.innerHTML += "<div><h4 class='details__title'>Address<h4><input/></div>";
         div.innerHTML += "<div><button onClick='hide()' class='submit__button'>Submit Details</button></div>";
 }
 
