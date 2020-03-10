@@ -114,6 +114,11 @@ nav {
     margin-right: 2rem;
 }
 
+.menu__item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 #choose {
     background-color: #E7E7E7;
     margin: 0;
