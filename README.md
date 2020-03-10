@@ -2,7 +2,7 @@
 ## Duration: 4.5 hours
 
 ## How to run
-- Simply copy the path from the html and paste into the browser. I would have built it in Angluar, but was working out of the downloaded file. 
+- Simply copy the path from the html and paste into the browser. I would have built it in Angluar using an ngFor loop to loop though the data, but was working within the downloaded file. 
 
 ## Dekstop View 
 ![Desktop](https://imgur.com/9Gapk4l.jpg)
