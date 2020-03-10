@@ -27,6 +27,7 @@ function fetchData() {
         })
         .catch(error => {
             console.log(error);
+            alert('There is an error loading the data');
         });
 }
 
