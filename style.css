@@ -55,6 +55,12 @@ nav {
     bottom: 0.5rem;
 }
 
+.take__button:hover {
+    background-color: #217E56;
+    cursor: pointer;
+    color: lightgray;
+}
+
 .submit__button {
     background-color: #2DA371;
     color: white;
@@ -62,6 +68,12 @@ nav {
     height: 45px;
     font-size: 15px;
     bottom: 0.5rem;
+}
+
+.submit__button:hover {
+    background-color: #217E56;
+    cursor: pointer;
+    color: lightgray;
 }
 
 .cat__info {
